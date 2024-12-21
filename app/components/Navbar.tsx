@@ -1,4 +1,5 @@
 import React from 'react'
+import { SignedIn, SignInButton, SignedOut, UserButton } from '@clerk/nextjs';
 
 const Navbar: React.FC = () => {
     return (
@@ -10,6 +11,12 @@ const Navbar: React.FC = () => {
                 <li><button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Write</button></li>
                 <li><button className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded">Toggle Theme</button></li>
             </ul>
+            <SignedOut>
+                <SignInButton />
+            </SignedOut>
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
         </nav>
     );
 };
