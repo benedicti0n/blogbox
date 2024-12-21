@@ -9,7 +9,6 @@ const Navbar: React.FC = () => {
                 <li><a href="/feed" className="hover:text-gray-400">Feed</a></li>
                 <li><button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Write</button></li>
                 <li><button className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded">Toggle Theme</button></li>
-                <li><button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Signup</button></li>
             </ul>
         </nav>
     );
